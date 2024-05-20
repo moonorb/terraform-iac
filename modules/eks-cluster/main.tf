@@ -37,7 +37,9 @@ module "eks" {
   vpc_id     = var.vpc_id
   subnet_ids =  var.subnet_ids
   tags = var.required_tags
+  eks_managed_node_groups = var.managed_node_groups
 }
+
 
 
 module "eks_blueprints_addons" {
