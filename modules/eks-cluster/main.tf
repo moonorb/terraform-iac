@@ -50,7 +50,7 @@ module "eks_blueprints_addons" {
   oidc_provider_arn = module.eks.oidc_provider_arn
   enable_aws_load_balancer_controller    = true
   enable_cluster_proportional_autoscaler = false
-  enable_karpenter                       = true
+  enable_karpenter                       = false
   enable_kube_prometheus_stack           = false
   enable_metrics_server                  = false
   enable_external_dns                    = false
